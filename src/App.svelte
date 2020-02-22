@@ -1,12 +1,6 @@
 <script>
   //plugins
-  import {
-    setContext,
-    onMount,
-    onDestroy,
-    beforeUpdate,
-    afterUpdate
-  } from "svelte";
+  import { setContext, onMount, afterUpdate } from "svelte";
 
   //components
   import Navbar from "./Navbar.svelte";
