@@ -27,10 +27,10 @@
   button {
     transition: var(--mainTransition);
     color: var(--button);
-    &:hover {
-      color: var(--buttonHover);
-      transform: scale(1.2);
-    }
+  }
+  button:hover {
+    color: var(--buttonHover);
+    transform: scale(1.2);
   }
 </style>
 

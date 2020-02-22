@@ -31,23 +31,22 @@
   h1 {
     font-size: 5vw;
     position: relative;
-    button {
-      position: absolute;
-      bottom: 0;
-      right: -10px;
-      opacity: 0;
-      transition: var(--mainTransition);
-      color: var(--button);
-      &:hover {
-        color: var(--buttonHover);
-        transform: scale(1.2);
-      }
-    }
-    &:hover {
-      button {
-        opacity: 1;
-      }
-    }
+  }
+  h1:hover button {
+    opacity: 1;
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    opacity: 0;
+    transition: var(--mainTransition);
+    color: var(--button);
+  }
+  button:hover {
+    color: var(--buttonHover);
+    transform: scale(1.2);
   }
   span {
     color: var(--button);
