@@ -62,6 +62,7 @@
   </div>
   <h1>
     Hello,
+    <br />
     <span>{UserInfoName}</span>
     !
     <button class="expense-btn edit-btn" on:click={showUserForm}>

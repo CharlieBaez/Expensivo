@@ -24,16 +24,16 @@
     align-items: flex-start;
   }
   button {
+    background-color: transparent;
     color: var(--button);
     margin-left: auto;
-    margin-top: 3px;
   }
 </style>
 
 <section>
   <div class="header-row">
     <SectionHeader SectionHeader="expense list" />
-    <button type="button" class="nav-btn" on:click={showForm}>
+    <button type="button" class="btn-primary" on:click={showForm}>
       <i class="far fa-plus-square" />
       Add a New Expense
     </button>
