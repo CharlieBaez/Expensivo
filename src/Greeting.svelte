@@ -61,13 +61,19 @@
     {todayDate.getDate()} {months[todayDate.getMonth()]}, {todayDate.getFullYear()}
   </div>
   <h1>
-    Hello,
-    <br />
-    <span>{UserInfoName}</span>
+    Hello
+    {#if UserInfoName}
+      ,
+      <br />
+      <span>{UserInfoName}</span>
+    {/if}
     !
     <button class="expense-btn edit-btn" on:click={showUserForm}>
       <i class="fas fa-pen" />
     </button>
   </h1>
-  <h2>welcome back</h2>
+  {#if UserInfoName}
+    <h2>welcome back</h2>
+  {/if}
+
 </section>
